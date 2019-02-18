@@ -1,33 +1,92 @@
+@import '~animate.css';
+
 .App {
-  text-align: center;
+  width: 1920px;
+  height: 1080px;
+  /* background: blue; */
+  position: relative;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-list {
+  width: 1400px;
+  height: 43px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  position: absolute;
+  top: 13px;
+  left: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-list li {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  width: 225px;
+  height: 43px;
+  cursor: pointer;
+  line-height: 43px;
+  background: greenyellow;
+  background-size: 100% 100%;
+}
+.nav-list p::before{
+  content:'';
+  width: 21px;
+  height: 21px;
+  background: url('/static/img/nav1.png') no-repeat;
+  display: block;
+  position: absolute;
+  top:12px
+}
+.nav-list li:nth-child(1) p::before{
+  left:49px;
+  background: url('/static/img/nav1.png') no-repeat;
+}
+.nav-list li:nth-child(2) p::before{
+  left:48px;
+  background: url('/static/img/nav2.png') no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-list p {
+  font-size: 18px;
+  color: #ffffff;
+  height:43px;
+  line-height: 43px;
+}
+
+.nav-list li:nth-child(1) {
+  left: 54px;
+}
+
+.nav-list li:nth-child(2) {
+  left: 250px;
+}
+
+.activeLeftClass{
+  width: 221px;
+  height: 39px;
+  background: url(/static/img/leftToolBox.png) no-repeat;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.activeRightClass{
+  width: 220px;
+  height: 40px;
+  background:url('/static/img/rightToolBox.png') no-repeat ;
+  position: absolute;
+  left: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-list li:nth-child(1) .activeLeftClass p::before{
+  left:49px;
+  background: url('/static/img/nav-1.png') no-repeat;
+}
+.nav-list li:nth-child(2) .activeLeftClass p::before{
+  left:48px;
+  background: url('/static/img/nav-2.png') no-repeat;
 }
