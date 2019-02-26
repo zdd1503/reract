@@ -1,6 +1,8 @@
 import React from 'react';
 import Dialog from '../component/dialog/Dialog';
 import ToggleButton from '../component/toggleButton/button';
+import Path from '../component/d3-path/path';
+import Redux from '../component/redux/toodolist';
 class HomePage extends React.Component {
   constructor(props) {
     super(props)
@@ -24,6 +26,8 @@ class HomePage extends React.Component {
         <Dialog width={457} height={210} left={69} top={30} ref={'dialogRef'}>
         </Dialog>
         <ToggleButton clicks={this.tabClick.bind(this)} />
+        <Path />
+        <Redux />
       </div>
     )
   }
