@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+ 
+   .bos {
+    margin: 100px auto;
+    width: 350px;
+    position: relative;
+   }
+ 
+   .bos a {
+    float: right;
+   }
+ 
+   #button {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 301px;
+    bottom: 0;
+    background: red
+    
+   }
+ 
+   textarea {
+    width: 350px;
+    resize: none;
+    background: yellow;
+   }
+ 
+   ul li {
+    list-style: none;
+   }

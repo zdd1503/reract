@@ -3,6 +3,9 @@ import Dialog from '../component/dialog/Dialog';
 import ToggleButton from '../component/toggleButton/button';
 import Path from '../component/d3-path/path';
 import Redux from '../component/redux/toodolist';
+import News from '../component/newsScroll/new';
+import TypeNew from '../component/typeNew/typenew';
+
 class HomePage extends React.Component {
   constructor(props) {
     super(props)
@@ -28,6 +31,8 @@ class HomePage extends React.Component {
         <ToggleButton clicks={this.tabClick.bind(this)} />
         <Path />
         <Redux />
+        {/* <News /> */}
+        <TypeNew />
       </div>
     )
   }
