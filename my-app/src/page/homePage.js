@@ -3,9 +3,7 @@ import Dialog from '../component/dialog/Dialog';
 import ToggleButton from '../component/toggleButton/button';
 import Path from '../component/d3-path/path';
 import Redux from '../component/redux/toodolist';
-import News from '../component/newsScroll/new';
-import TypeNew from '../component/typeNew/typenew';
-
+import Polgon from '../component/d3-path/polygon';
 class HomePage extends React.Component {
   constructor(props) {
     super(props)
@@ -32,7 +30,7 @@ class HomePage extends React.Component {
         <Path />
         <Redux />
         {/* <News /> */}
-        <TypeNew />
+        <Polgon />
       </div>
     )
   }
